@@ -1,0 +1,14 @@
+{
+  "name": "CRUD-angular",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/giacominimarco/CRUD-angular.git",
+  "author": "giacominimarco <giacomini_m.a@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}
