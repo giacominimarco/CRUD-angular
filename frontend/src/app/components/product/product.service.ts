@@ -17,6 +17,7 @@ export class ProductService {
   ) { }
 
   showMessage(msn: string): void {
+    console.log("chegou aqui11")
     this.snackBar.open(msn, 'x', {
       duration: 1000,
       horizontalPosition: 'right',
@@ -25,7 +26,12 @@ export class ProductService {
   }
 
   create(product: Product): Observable<Product> {
+    console.log(product)
     return this.http.post<Product>(this.baseUrl, product)
+  }
+
+  read(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.baseUrl)
   }
 
 }
